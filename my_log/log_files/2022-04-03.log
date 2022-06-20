@@ -1,0 +1,51 @@
+2022-04-03 16:39:54,657 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py logtest1 19 division by zero
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py", line 17, in <module>
+    1/0
+ZeroDivisionError: division by zero
+2022-04-03 16:40:43,999 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py logtest1 14 test
+2022-04-03 16:40:43,999 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py logtest1 19 division by zero
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py", line 17, in <module>
+    1/0
+ZeroDivisionError: division by zero
+2022-04-03 16:52:42,051 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py send_email 37 unhashable type: 'list'
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py", line 35, in send_email
+    stp.sendmail(self.sender, self.receiver, msg.as_string())
+  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 894, in sendmail
+    senderrs[each] = (code, resp)
+TypeError: unhashable type: 'list'
+2022-04-03 16:55:14,012 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py send_email 38 unhashable type: 'list'
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py", line 36, in send_email
+    stp.sendmail(self.sender, self.receiver, msg.as_string())
+  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 894, in sendmail
+    senderrs[each] = (code, resp)
+TypeError: unhashable type: 'list'
+2022-04-03 17:00:37,656 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py send_email 38 unhashable type: 'list'
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py", line 36, in send_email
+    stp.sendmail(self.sender, self.receiver, msg.as_string())
+  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 894, in sendmail
+    senderrs[each] = (code, resp)
+TypeError: unhashable type: 'list'
+2022-04-03 17:01:13,606 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py send_email 38 {('2585174552@qq.com', 'xiexinli6@163.com'): (550, b'Invalid User: 2585174552@qq.comxiexinli6@163.com')}
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_email\send_email.py", line 36, in send_email
+    stp.sendmail(self.sender, self.receiver, msg.as_string())
+  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\smtplib.py", line 901, in sendmail
+    raise SMTPRecipientsRefused(senderrs)
+smtplib.SMTPRecipientsRefused: {('2585174552@qq.com', 'xiexinli6@163.com'): (550, b'Invalid User: 2585174552@qq.comxiexinli6@163.com')}
+2022-04-03 17:11:23,311 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py line:14 test
+2022-04-03 17:11:23,311 C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py line:19 division by zero
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py", line 17, in <module>
+    1/0
+ZeroDivisionError: division by zero
+[2022-04-03 17:12:11,203] C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py line:14 test
+[2022-04-03 17:12:11,204] C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py line:19 division by zero
+Traceback (most recent call last):
+  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\my_log\logtest1.py", line 17, in <module>
+    1/0
+ZeroDivisionError: division by zero
