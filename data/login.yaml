@@ -2,7 +2,8 @@
   path: "/api/metis/user/phone/login"
   user:
     phone: "17612153057"
-    phoneCode: "8851"
-    cookies: "F79A41B60144862EEF987E9915656FA2"
+    phoneCode: "4070"
+  headers:
+    cookie: "JSESSIONID=796F2B63680AD5D23167D50434B750A4"
   response:
     message: "成功状态码"
