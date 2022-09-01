@@ -29,7 +29,7 @@ class Keys:
             print("未获取到token,登录失败")
             return token
 
-    # 组装yaml数据:入参要从上游接口响应获取,不需要要关心payload的数据结构
+    # 组装入参
     def register(self, kwargs):
         for k, v in kwargs.items():
             if isinstance(v, dict):
