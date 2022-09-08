@@ -9,3 +9,15 @@
     token:
   response:
     message: "成功状态码"
+
+-
+  path: "/api/metis/order/getInAndOutboundDetail"
+  params:
+    erpOrderNo: "d29c3ddd17c2a89131725fd8bb1bbc7b"
+    orderType: "SALE_ORDER"
+    waybillNo: ''
+    subOrderType: ''
+  headers:
+    token:
+  response:
+    code: "0000"

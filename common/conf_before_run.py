@@ -4,4 +4,5 @@
 """ """
 
 __author__ = 'List.Xie'
-# print(' c测试案例初始化模块')
+
+from icecream import ic

@@ -11,6 +11,7 @@ from ddt2 import file_data, ddt
 import jsonpath
 from common.keywords import Keys
 from conf.read_conf import read_conf
+import global_fields
 
 
 @ddt
@@ -19,12 +20,15 @@ class Case(unittest.TestCase):
     # 全局变量
     def setUpClass(cls) -> None:
         cls.ik = Keys()
-        cls.host = read_conf("../../conf/conf.ini", "online", "host")
+        global_fields._init_()
+        global_dict["host"] = read_conf("../../conf/conf.ini", "online", "host")
+        print(global_dict)
         cls.ik.token = None
 
     @file_data("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/data/login.yaml")
     def test_login(self, **kwargs):
-        url = Case.host + kwargs["path"]
+        print(kwargs)
+        url = global_dict["host"] + kwargs["path"]
         json = {"phone": kwargs["user"]["phone"], "phoneCode": kwargs["user"]["phoneCode"]}
         headers = {
             "cookie": kwargs['headers']["cookie"]
@@ -40,7 +44,8 @@ class Case(unittest.TestCase):
 
     @file_data("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/data/query_order.yaml")
     def test_query_order(self, **kwargs):
-        url = Case.host + kwargs["path"]
+        print(kwargs)
+        url = global_dict["host"] + kwargs["path"]
         kwargs = self.ik.register(kwargs)
 
         response = self.ik.do_get(url, headers=kwargs["headers"], params=kwargs["params"])
