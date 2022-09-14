@@ -24,7 +24,7 @@ class MyEmail():
     # receiver = ["2585174552@qq.com", "xiexinli6@163.com"]
     def send_email(self):
 
-        with open("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/test_reports/reports_html/report.html", "rb") as f:
+        with open("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomation4SLProject/test_reports/reports_html/report.html", "rb") as f:
             text = f.read()
         msg = MIMEText(text, "html", "utf-8")
         msg["Subject"] = Header("接口测试报告", "utf-8")

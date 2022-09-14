@@ -25,7 +25,7 @@ class Case(unittest.TestCase):
         print(global_dict)
         cls.ik.token = None
 
-    @file_data("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/data/login.yaml")
+    @file_data("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomation4SLProject/data/login.yaml")
     def test_login(self, **kwargs):
         print(kwargs)
         url = global_dict["host"] + kwargs["path"]
@@ -42,7 +42,7 @@ class Case(unittest.TestCase):
         message = jsonpath.jsonpath(response.json(), "$.message")[0]
         assert message == kwargs["response"]["message"]
 
-    @file_data("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/data/query_order.yaml")
+    @file_data("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomation4SLProject/data/query_order.yaml")
     def test_query_order(self, **kwargs):
         print(kwargs)
         url = global_dict["host"] + kwargs["path"]

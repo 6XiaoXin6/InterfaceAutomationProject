@@ -15,10 +15,10 @@ from conf.read_conf import read_conf
 @ddt
 class LoginTestCase(unittest.TestCase):
 
-    @file_data('C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/data/login.yaml')
+    @file_data('C:/Users/xiaoxin/PycharmProjects/InterfaceAutomation4SLProject/data/login.yaml')
     def test_login(self, **kwargs):  # 参数类型一致性
 
-        host = read_conf("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/conf/conf.ini", "online", "host")
+        host = read_conf("C:/Users/xiaoxin/PycharmProjects/InterfaceAutomation4SLProject/conf/conf.ini", "online", "host")
         url = host + kwargs["path"]
         json = {"phone": kwargs["user"]["phone"], "phoneCode": kwargs["user"]["phoneCode"]}
         headers = {
