@@ -11,9 +11,9 @@ from HTMLTestRunner import HTMLTestRunner
 
 suite = unittest.TestSuite()
 tests = unittest.defaultTestLoader.discover(
-    start_dir="/test_case/", pattern="test*.py")
+    start_dir="../signal_interface", pattern="test_*.py")
 suite.addTests(tests)
-with open("/test_reports/reports_html/report.html",
+with open("C:/Users/xiexinli/Documents/GitHub/InterfaceAutomation4SLProject/test_reports/reports_html/report.html",
           "w", encoding = "utf-8") as f:
-    runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="接口测试报告", description="控制塔接口测试报告")
+    runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="接口测试报告", description="苏格拉底接口测试报告")
     runner.run(suite)

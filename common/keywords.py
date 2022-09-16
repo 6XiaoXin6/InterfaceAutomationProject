@@ -31,6 +31,11 @@ class Keys:
 
     # 组装入参
     def register(self, kwargs):
+        """
+
+        :param kwargs:
+        :return:
+        """
         for k, v in kwargs.items():
             if isinstance(v, dict):
                 self.register(v)
