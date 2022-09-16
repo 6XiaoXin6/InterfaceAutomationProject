@@ -189,11 +189,11 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2022-04-03 19:22:24</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.000890</p>
-<p class='attribute'><strong>Status:</strong> Error 2</p>
+<p class='attribute'><strong>Start Time:</strong> 2022-09-16 17:28:55</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.122963</p>
+<p class='attribute'><strong>Status:</strong> Pass 1</p>
 
-<p class='description'>控制塔接口测试报告</p>
+<p class='description'>苏格拉底接口测试报告</p>
 </div>
 
 
@@ -221,74 +221,31 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>unittest.loader._FailedTest</td>
-    <td>2</td>
+<tr class='passClass'>
+    <td>test_fullresearch_hotpicks.FullSearch_HotPicks</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>2</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login2query_order</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_status_00001: test_status_00001</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: ImportError: Failed to import test module: flows.test_login2query_order
-Traceback (most recent call last):
-  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\test_case\flows\test_login2query_order.py", line 13, in &lt;module&gt;
-    from common.keys import Keys
-ModuleNotFoundError: No module named 'common'
-
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='ft1.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
-        error</a>
-
-    <div id='div_ft1.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-ft1.2: ImportError: Failed to import test module: signal_interface.test_login
-Traceback (most recent call last):
-  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\unittest\loader.py", line 436, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "C:\Users\xiaoxin\AppData\Local\Programs\Python\Python39\lib\unittest\loader.py", line 377, in _get_module_from_name
-    __import__(name)
-  File "C:\Users\xiaoxin\PycharmProjects\InterfaceAutomationProject\test_case\signal_interface\test_login.py", line 13, in &lt;module&gt;
-    from common.keys import Keys
-ModuleNotFoundError: No module named 'common'
-
+pt1.1: {'SkipCount': 0, 'MaxResultCount': 5}
 
 
         </pre>
@@ -300,10 +257,10 @@ ModuleNotFoundError: No module named 'common'
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>2</td>
+    <td>1</td>
+    <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>2</td>
     <td>&nbsp;</td>
 </tr>
 </table>
