@@ -8,6 +8,7 @@ __author__ = 'List.Xie'
 import unittest
 
 from ddt2 import file_data, ddt
+from my_log import my_Logger
 
 from common.keywords import Keys
 from conf.read_conf import read_conf
@@ -30,6 +31,9 @@ class FullSearch_HotPicks(unittest.TestCase):
 
         k = Keys()
         response = k.do_get(url, headers=headers, params=params)
+        # logger=my_Logger.MyLogger.getMyLogger()
+
+        # logger(response.json())
 
         # message = jsonpath.jsonpath(response.json(), "$.message")[0]
 

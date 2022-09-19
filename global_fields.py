@@ -17,3 +17,7 @@ def set_value(key, value):
 
 def get_value(key):
     return getattr(global_dict, key, f"没有属性{key}")
+
+
+# mai
+# def

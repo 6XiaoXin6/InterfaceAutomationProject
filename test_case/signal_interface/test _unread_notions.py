@@ -9,6 +9,7 @@ import unittest
 
 from ddt2 import file_data, ddt
 
+from my_log import my_Logger
 from common.keywords import Keys
 from conf.read_conf import read_conf
 
@@ -29,6 +30,11 @@ class UnreadNotions(unittest.TestCase):
 
         k = Keys()
         response = k.do_get(url, headers=headers)
+
+
+        ml=my_Logger.MyLogger()
+        logger=ml.getMyLogger()
+        logger.warning(response.json())
         # print(response.json())
         # message = jsonpath.jsonpath(response.json(), "$.message")[0]
         check = kwargs["response"]["check"]

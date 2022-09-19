@@ -18,7 +18,8 @@ class MyLogger():
 
     def handler(self):
         self.log_file_name = datetime.now().strftime("%Y-%m-%d")
-        self.my_handler = logging.FileHandler(f"C:/Users/xiaoxin/PycharmProjects/InterfaceAutomationProject/my_log/log_files/{self.log_file_name}.log")
+        self.my_handler = logging.FileHandler(
+            f"C:/Users/xiexinli/Documents/GitHub/InterfaceAutomation4SLProject/my_log/log_files/{self.log_file_name}.log")
         self.my_handler.setFormatter(self.formatter())
         return self.my_handler
 

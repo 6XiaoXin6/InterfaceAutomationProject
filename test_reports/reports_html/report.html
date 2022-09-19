@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>接口测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2022-09-16 17:28:55</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.122963</p>
-<p class='attribute'><strong>Status:</strong> Pass 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2022-09-19 15:35:46</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.155135</p>
+<p class='attribute'><strong>Status:</strong> Error 1</p>
 
 <p class='description'>苏格拉底接口测试报告</p>
 </div>
@@ -221,31 +221,37 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='passClass'>
+<tr class='errorClass'>
     <td>test_fullresearch_hotpicks.FullSearch_HotPicks</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_status_00001: test_status_00001</div></td>
+<tr id='ft1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>test_status_00001: test_status_00001</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
-        pass</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        error</a>
 
-    <div id='div_pt1.1' class="popup_window">
+    <div id='div_ft1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt1.1: {'SkipCount': 0, 'MaxResultCount': 5}
+ft1.1: {'SkipCount': 0, 'MaxResultCount': 5}
+Traceback (most recent call last):
+  File "C:\Users\xiexinli\AppData\Local\Programs\Python\Python310\lib\site-packages\ddt2.py", line 212, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\xiexinli\Documents\GitHub\InterfaceAutomation4SLProject\test_case\signal_interface\test_fullresearch_hotpicks.py", line 34, in test_status
+    logger=my_Logger.MyLogger.getMyLogger()
+TypeError: MyLogger.getMyLogger() missing 1 required positional argument: 'self'
 
 
         </pre>
@@ -258,9 +264,9 @@ pt1.1: {'SkipCount': 0, 'MaxResultCount': 5}
 <tr id='total_row'>
     <td>Total</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
