@@ -35,7 +35,7 @@ class FullSearch_HotPicks(unittest.TestCase):
 
         # logger(response.json())
 
-        # message = jsonpath.jsonpath(response.json(), "$.message")[0]
+        message = jsonpath.jsonpath(response.json(), "$.message")[0]
 
         assert response.status_code == 200
 
